@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container{
+    height: 425px;
+    width: 425px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,85px);
+    
+}
+.grid-item{
+    background-color: rgb(219, 211, 255);
+    border: 0.5px solid rgb(80, 80, 80);
+}
+
+form{
+    width:100px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(219, 211, 255);
+    border: 0.5px solid rgb(80, 80, 80);
+    border-bottom: none;
+    box-shadow: 0 3px 12px inset rgb(11, 4, 100);
+}
+
+#radio-container{
+    padding:20px 33px;
+}
+#O{
+    margin-top: 50px;
+}
+
+#saveBtn{
+    color: white;
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(0, 0, 32);
+    border: 0;
+}
+
+#PredictBtn{
+    color: white;
+    width: 425px;
+    padding: 10px;
+    background-color: rgb(0, 0, 32);
+    border: 0;
+    
+}
+
+#PredictBtn:hover,#saveBtn:hover{
+    filter: brightness(150%);
+}
